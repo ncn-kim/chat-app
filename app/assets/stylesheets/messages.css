@@ -15,6 +15,23 @@
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name {
+  font-size: 16px;
+  color: #FAFAFA;
+  /* text-decoration: none; */
+}
+
+.create-room {
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+  /* text-decoration: none; */
 }
 
 .rooms {
@@ -22,6 +39,13 @@
   height: calc(100vh - 100px);
   padding: 0 20px;
   background-color: #2F3E51;
+  overflow: scroll;
+}
+
+.room {
+  margin: 20px 0 40px;
+  color: white;
+  text-decoration: none;
 }
 
 /* メイン */

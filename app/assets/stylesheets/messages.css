@@ -28,10 +28,13 @@
 
 .create-room {
   font-size: 10px;
-  color: deepskyblue;
   border: 1px solid lightblue;
   padding: 14px;
+}
+
+.create-room a {
   text-decoration: none;
+  color: deepskyblue;
 }
 
 .rooms {
@@ -44,8 +47,11 @@
 
 .room {
   margin: 20px 0 40px;
-  color: white;
+}
+
+.room-name a {
   text-decoration: none;
+  color: white;
 }
 
 /* メイン */

@@ -36,6 +36,16 @@
     background-color: #2F3E51;
     height: calc(100% - 100px);
     padding: 0px 20px;
+    overflow: scroll;
+}
+
+.room {
+    padding: 20px 0 40px;
+}
+
+.room-name a {
+    color: white;
+    text-decoration: none;
 }
 
 /* チャット画面 */

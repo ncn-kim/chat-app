@@ -9,6 +9,8 @@
     height: 100vh;
 }
 
+/* サイドバーヘッダー */
+
 .side-bar-header {
     background-color: #253141;
     height: 100px;
@@ -32,11 +34,17 @@
     text-decoration: none;
 }
 
+/* ルーム */
+
 .rooms {
     background-color: #2F3E51;
     height: calc(100% - 100px);
     padding: 0px 20px;
     overflow: scroll;
+}
+
+.rooms::-webkit-scrollbar {
+    display: none;
 }
 
 .room {
@@ -54,6 +62,8 @@
     width: calc(100vw - 300px);
     height: 100vh;
 }
+
+/* チャットヘッダー */
 
 .chat-header {
     background-color: #ffffff;
@@ -74,11 +84,40 @@
     padding: 20px;
 }
 
+/* メッセージ画面 */
+
 .messages {
     background-color: #FAFAFA;
     height: calc(100% - 100px - 90px);
     padding: 46px 40px 0;
+    overflow: scroll;
 }
+
+.messages::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    margin-bottom: 40px;
+}
+
+.upper-message {
+    display: flex;
+    padding: 10px 0;
+}
+
+.message-user {
+    font-size: 16px;
+    color: #434A54;
+    margin-right: 10px;
+}
+
+.message-date {
+    font-size: 12px;
+    color: #999;
+}
+
+/* フォーム */
 
 .form {
     background-color: #DDDDDD;

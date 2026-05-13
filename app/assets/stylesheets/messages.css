@@ -90,7 +90,7 @@
     background-color: #FAFAFA;
     height: calc(100% - 100px - 90px);
     padding: 46px 40px 0;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .messages::-webkit-scrollbar {

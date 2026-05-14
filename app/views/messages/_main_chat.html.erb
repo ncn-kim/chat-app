@@ -6,27 +6,9 @@
 </div>
 
 <div class="messages">
-    <div class="message">
-        <div class="upper-message">
-            <div class="message-user">Tom</div>
-            <div class="message-date">2026/05/13(Wed) 12:00:00</div>
-        </div>
-        <div class="lower-message">
-            <div class="message-content">おはよう</div>
-        </div>
-    </div>
-    <div class="message">
-        <div class="upper-message">
-            <div class="message-user">Tom</div>
-            <div class="message-date">2026/05/13(Wed) 13:00:00</div>
-        </div>
-        <div class="lower-message">
-            <div class="message-content">こんにちは</div>
-        </div>
-    </div>
+    <%= render partial: "message", collection: @messages %>
 </div>
 
-<%# <div class="form"> %>
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
     <div class="form-input">
         <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
